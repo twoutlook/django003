@@ -33,6 +33,8 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'polls.apps.PollsConfig',
     'materials.apps.MaterialsConfig',
+    'f1.apps.F1Config',
+    'f2.apps.F2Config',
     # 'app2.apps.MaterialsConfig',
     
     'django.contrib.admin',

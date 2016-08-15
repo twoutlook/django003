@@ -4,5 +4,5 @@
   <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>   {% endfor %}
     </ul>
 {% else %}
-    <p>No polls are available.</p>
+    <p>無資料，需要登入才能查看。</p>
 {% endif %}
