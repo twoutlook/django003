@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'materials.apps.MaterialsConfig',
     'f1.apps.F1Config',
     'f2.apps.F2Config',
+    'app001.apps.App001Config',
     # 'app2.apps.MaterialsConfig',
     
     'django.contrib.admin',
