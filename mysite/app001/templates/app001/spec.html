@@ -15,7 +15,7 @@
     <div class='info'>
         
 <h1>
-{{ page_title }}
+{{ page_title }} 技術規格
     
 </h1>
                                                         
@@ -29,11 +29,11 @@
     <table>
     {% for item in item_list %}
     <tr>
-    <td>{{ item.field1 }}</td>
-    <td>{{ item.field2 }}</td>
-    <td>{{ item.field3 }}</td>
-    <td>{{ item.field4 }}</td>
-    <td>{{ item.field5 }}</td>
+    <th style='padding: 6px; text-align:center;'>{{ item.field1 }}</th>
+    <td style='padding: 6px; text-align:left;'>{{ item.field2 }}</td>
+    <!--<td style='padding: 3px; text-align:left;'>{{ item.field3 }}</td>-->
+    <!--<td>{{ item.field4 }}</td>-->
+    <!--<td>{{ item.field5 }}</td>-->
     </tr>
     {% endfor %}
 

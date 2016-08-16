@@ -14,11 +14,11 @@ from django.utils import timezone
 #         return self.field1
 
 class Spec(models.Model):
-    field1 = models.CharField(max_length=200)
+    field1 = models.IntegerField()
     field2 = models.CharField(max_length=200)
-    field3 = models.CharField(max_length=200)
-    field4 = models.CharField(max_length=200)
-    field5 = models.CharField(max_length=200)
+    field3 = models.CharField(max_length=200,null=True)
+    # field4 = models.CharField(max_length=200)
+    # field5 = models.CharField(max_length=200)
     def __str__(self):
         return self.field1
 
