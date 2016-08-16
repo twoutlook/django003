@@ -13,6 +13,8 @@ from .models import Item001
 from .models import Item002
 from .models import Item003
 from .models import Item004
+from .models import Spec
+
 
 # def index(request):
 #     return HttpResponse("Hello, world. 欠料")
@@ -47,8 +49,8 @@ def spec(request):
     #     context = {'page_title':'Spec','item_list': {}}
     #     return render(request, 'app001/spec.html', context)     
         
-    item_list = Item000.objects.order_by('field1')[:100]
-    context = {'page_title':'Cloud Bullitin','item_list': item_list}
+    item_list = Spec.objects.order_by('field1')[:100]
+    context = {'page_title':'App001 SPEC','item_list': item_list}
     return render(request, 'app001/spec.html', context)     
 
 def item001(request):

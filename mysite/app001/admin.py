@@ -7,6 +7,8 @@ from .models import Item001
 from .models import Item002
 from .models import Item003
 from .models import Item004
+from .models import Spec
+
 from django.contrib import admin
 # admin.site.register(Customer)
 
@@ -22,3 +24,4 @@ admin.site.register(Item001)
 admin.site.register(Item002)
 admin.site.register(Item003)
 admin.site.register(Item004)
+admin.site.register(Spec)
