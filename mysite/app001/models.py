@@ -29,6 +29,7 @@ class Item000(models.Model):
     field3 = models.CharField(max_length=200)
     field4 = models.CharField(max_length=200)
     field5 = models.CharField(max_length=200)
+    field6 = models.CharField(max_length=200,null=True)
     def __str__(self):
         return self.field1
 

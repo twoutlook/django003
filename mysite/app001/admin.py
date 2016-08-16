@@ -13,7 +13,7 @@ from django.contrib import admin
 # admin.site.register(Customer)
 
 class Item000Admin(admin.ModelAdmin):
-    list_display=['field1','field2','field3','field4','field5']
+    list_display=['field1','field2','field3','field4','field5','field6']
 admin.site.register(Item000,Item000Admin)
 
 
