@@ -1,5 +1,24 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import Customer
-admin.site.register(Customer)
+# from .models import Customer
+from .models import Item000
+from .models import Item001
+from .models import Item002
+from .models import Item003
+from .models import Item004
+from django.contrib import admin
+# admin.site.register(Customer)
+
+class Item000Admin(admin.ModelAdmin):
+    list_display=['field1','field2','field3','field4']
+admin.site.register(Item000,Item000Admin)
+
+
+# admin.site.register(Item000)
+
+
+admin.site.register(Item001)
+admin.site.register(Item002)
+admin.site.register(Item003)
+admin.site.register(Item004)
