@@ -17,6 +17,11 @@ class Item000Admin(admin.ModelAdmin):
 admin.site.register(Item000,Item000Admin)
 
 
+class SpecAdmin(admin.ModelAdmin):
+    list_display=['field1','field2']
+admin.site.register(Spec,SpecAdmin)
+
+
 # admin.site.register(Item000)
 
 
@@ -24,4 +29,4 @@ admin.site.register(Item001)
 admin.site.register(Item002)
 admin.site.register(Item003)
 admin.site.register(Item004)
-admin.site.register(Spec)
+# admin.site.register(Spec)

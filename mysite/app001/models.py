@@ -20,7 +20,7 @@ class Spec(models.Model):
     # field4 = models.CharField(max_length=200)
     # field5 = models.CharField(max_length=200)
     def __str__(self):
-        return self.field1
+        return self.field2
 
 
 class Item000(models.Model):
@@ -48,6 +48,7 @@ class Item002(models.Model):
     field3 = models.CharField(max_length=200)
     field4 = models.CharField(max_length=200)
     field5 = models.CharField(max_length=200)
+    field6 = models.CharField(max_length=200,null=True)
     def __str__(self):
         return self.field1
 class Item003(models.Model):
@@ -64,5 +65,6 @@ class Item004(models.Model):
     field3 = models.CharField(max_length=200)
     field4 = models.CharField(max_length=200)
     field5 = models.CharField(max_length=200)
+    field6 = models.CharField(max_length=200,null=True)
     def __str__(self):
         return self.field1
