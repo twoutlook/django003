@@ -33,13 +33,23 @@ def item000(request):
     if not request.user.is_authenticated:
         # return redirect('%s?next=%s' % (settings.LOGIN_URL, request.path))
         #return redirect('../admin')
-        context = {'page_title':'item000xxx','item_list': {}}
+        context = {'page_title':'Cloud Bullitin','item_list': {}}
         return render(request, 'app001/index.html', context)     
         
     item_list = Item000.objects.order_by('field1')[:100]
     context = {'page_title':'Cloud Bullitin','item_list': item_list}
     return render(request, 'app001/index.html', context)     
 
+def spec(request):
+    # if not request.user.is_authenticated:
+    #     # return redirect('%s?next=%s' % (settings.LOGIN_URL, request.path))
+    #     #return redirect('../admin')
+    #     context = {'page_title':'Spec','item_list': {}}
+    #     return render(request, 'app001/spec.html', context)     
+        
+    item_list = Item000.objects.order_by('field1')[:100]
+    context = {'page_title':'Cloud Bullitin','item_list': item_list}
+    return render(request, 'app001/spec.html', context)     
 
 def item001(request):
     if not request.user.is_authenticated:
