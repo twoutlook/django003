@@ -23,14 +23,28 @@
 
 {% if item_list %}
     <table>
+    <tr>
+    <th>編號</th>
+    <th>客戶</th>
+    <th>品名</th>
+    <th>欠料量</th>
+    <th>欠備庫量</th>
+    <th>客訴量</th>
+    <th>模具壽命</th>
+    
+ 
+    </tr>
+    
     {% for item in item_list %}
     <tr>
-    <td>{{ item.field1 }}</td>
+    <th>{{ item.field1 }}</th>
+    
     <td>{{ item.field2 }}</td>
     <td>{{ item.field3 }}</td>
     <td>{{ item.field4 }}</td>
     <td>{{ item.field5 }}</td>
     <td>{{ item.field6 }}</td>
+    <td>{{ item.field7 }}</td>
     </tr>
     {% endfor %}
 

@@ -14,6 +14,8 @@ from .models import Item002
 from .models import Item003
 from .models import Item004
 from .models import Spec
+from .models import Cust
+
 
 
 # def index(request):
@@ -52,6 +54,18 @@ def spec(request):
     item_list = Spec.objects.order_by('field1')[:100]
     context = {'page_title':'App001 SPEC','item_list': item_list}
     return render(request, 'app001/spec.html', context)     
+
+def cust(request):
+    # if not request.user.is_authenticated:
+    #     # return redirect('%s?next=%s' % (settings.LOGIN_URL, request.path))
+    #     #return redirect('../admin')
+    #     context = {'page_title':'Spec','item_list': {}}
+    #     return render(request, 'app001/spec.html', context)     
+        
+    item_list = Cust.objects.order_by('field1')[:100]
+    context = {'page_title':'App001 Cust','item_list': item_list}
+    return render(request, 'app001/cust.html', context)     
+
 
 def item001(request):
     if not request.user.is_authenticated:

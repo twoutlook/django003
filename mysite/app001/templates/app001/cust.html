@@ -3,7 +3,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>app001</title>
+    <title>app001-cust</title>
 <link rel="stylesheet" type="text/css" href="{% static 'app001/style.css' %}" />
 
 </head>
@@ -15,7 +15,7 @@
     <div class='info'>
         
 <h1>
-{{ page_title }}
+{{ page_title }} 客製
     
 </h1>
                                                         
@@ -29,12 +29,11 @@
     <table>
     {% for item in item_list %}
     <tr>
-    <th>{{ item.field1 }}</th>
-    <td><a target='_blank' href='{{ item.field2 }}'>{{ item.field2 }}</a></td>
-    <td>{{ item.field3 }}</td>
-    <td>{{ item.field4 }}</td>
-    <td>{{ item.field5 }}</td>
-    <td>{{ item.field6 }}</td>
+    <th style='padding: 6px; text-align:center;'>{{ item.field1 }}</th>
+    <td style='padding: 6px; text-align:left;'>{{ item.field2 }}</td>
+    <!--<td style='padding: 3px; text-align:left;'>{{ item.field3 }}</td>-->
+    <!--<td>{{ item.field4 }}</td>-->
+    <!--<td>{{ item.field5 }}</td>-->
     </tr>
     {% endfor %}
 
@@ -46,7 +45,4 @@
     </div>
 </body>
 </html>
-
-
-
 
