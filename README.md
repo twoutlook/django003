@@ -1,3 +1,20 @@
+python3 manage.py startapp f1
+python3 manage.py startapp f2
+python3 manage.py startapp s1
+
+python3 manage.py startapp s2
+--------------------------------------------
+python3 manage.py startapp app001
+  Not Found: /app001
+    mysite/urls.py
+      url(r'^app001/', include('app001.urls')),
+
+
+---------------------------------------------
+
+
+
+
 https://docs.djangoproject.com/en/dev/topics/auth/default/
 
 python3 manage.py runserver $IP:$PORT
@@ -25,6 +42,7 @@ python3 manage.py startapp materials
 
 python3 manage.py makemigrations
 python3 manage.py migrate
+
 python3 manage.createsuperuser
 => admin/ksxxx
      ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
